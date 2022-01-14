@@ -1,14 +1,10 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "pm-root",
-  template: `
-    <div>
-      <h1>{{ pageTitle }}</h1>
-      <pm-products></pm-products>
-    </div>
-  `,
+  templateUrl: "./app.component.html",
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   pageTitle: string = "Acme Product Management";
+  ngOnInit() {}
 }
